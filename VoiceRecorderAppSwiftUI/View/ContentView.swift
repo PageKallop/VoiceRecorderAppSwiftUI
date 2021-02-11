@@ -19,7 +19,7 @@ struct ContentView: View {
             RecordingList(audioRecorder: audioRecorder)
             //creates start/stop recording button
             if audioRecorder.recording == false {
-                Button(action: {print("Start recording")}) {
+                Button(action: {self.audioRecorder.startRecording()}) {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -29,7 +29,7 @@ struct ContentView: View {
                         .padding(.bottom, 40)
                 }
             } else {
-                Button(action: {print("Stop Recording")}) {
+                Button(action: {self.audioRecorder.stopRecording()}) {
                     Image(systemName: "stop.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fill)

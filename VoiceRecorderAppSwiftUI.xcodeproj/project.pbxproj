@@ -14,6 +14,7 @@
 		C0A55B5125D46F7F0068DA24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A55B5025D46F7F0068DA24 /* Preview Assets.xcassets */; };
 		C0A55B5425D46F7F0068DA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A55B5225D46F7F0068DA24 /* LaunchScreen.storyboard */; };
 		C0A55B5E25D470A80068DA24 /* AudioRecorderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55B5D25D470A80068DA24 /* AudioRecorderModel.swift */; };
+		C0D7A9F425D59C860000983D /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D7A9F325D59C860000983D /* RecordingDataModel.swift */; };
 		C0DB608825D4847C006C06A4 /* RecordingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB608725D4847C006C06A4 /* RecordingList.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		C0A55B5325D46F7F0068DA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A55B5525D46F7F0068DA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A55B5D25D470A80068DA24 /* AudioRecorderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderModel.swift; sourceTree = "<group>"; };
+		C0D7A9F325D59C860000983D /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
 		C0DB608725D4847C006C06A4 /* RecordingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				C0A55B4725D46F7E0068DA24 /* AppDelegate.swift */,
 				C0A55B4925D46F7E0068DA24 /* SceneDelegate.swift */,
 				C0A55B5D25D470A80068DA24 /* AudioRecorderModel.swift */,
+				C0D7A9F325D59C860000983D /* RecordingDataModel.swift */,
 				C0A55B5C25D470850068DA24 /* View */,
 				C0A55B4D25D46F7F0068DA24 /* Assets.xcassets */,
 				C0A55B5225D46F7F0068DA24 /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 				C0DB608825D4847C006C06A4 /* RecordingList.swift in Sources */,
 				C0A55B5E25D470A80068DA24 /* AudioRecorderModel.swift in Sources */,
 				C0A55B4825D46F7E0068DA24 /* AppDelegate.swift in Sources */,
+				C0D7A9F425D59C860000983D /* RecordingDataModel.swift in Sources */,
 				C0A55B4A25D46F7E0068DA24 /* SceneDelegate.swift in Sources */,
 				C0A55B4C25D46F7E0068DA24 /* ContentView.swift in Sources */,
 			);
