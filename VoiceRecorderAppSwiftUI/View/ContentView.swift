@@ -42,7 +42,8 @@ struct ContentView: View {
                         .padding(.bottom, 40)
                 }
                 }
-            }.navigationTitle("Voice Record")
+            }.navigationBarTitle("Voice Record")
+        .navigationBarItems(trailing: EditButton())
         .background(Color.black)
         .cornerRadius(20)
         }
