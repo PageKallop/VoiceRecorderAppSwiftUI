@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @ObservedObject var audioRecorder: AudioRecorder
     
+    @State private var isPressed: Bool = false
+    
     var body: some View {
         
         NavigationView{
@@ -27,24 +29,31 @@ struct ContentView: View {
                         .frame(width: 75, height: 75)
                          .clipped()
                         .overlay(
-                            Circle().stroke(Color.white, lineWidth: 4.0))
+                            Circle().stroke(Color.gray, lineWidth: 4.0))
                         .foregroundColor(.red)
                         .padding(.bottom, 40)
                 }
             } else {
+                ZStack {
+                    Circle()
+                        .frame(width: 75, height: 75)
+                        .foregroundColor(Color.clear)
+                        .overlay(
+                            Circle().stroke(Color.gray, lineWidth: 4.0))
+                        .padding(.bottom, 40)
                 Button(action: {self.audioRecorder.stopRecording()}) {
                     Image(systemName: "stop.fill")
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 100, height: 100)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 40)
                         .clipped()
                         .foregroundColor(.red)
                         .padding(.bottom, 40)
                 }
                 }
+            }
             }.navigationBarTitle("Voice Record")
         .navigationBarItems(trailing: EditButton())
-        .background(Color.black)
         .cornerRadius(20)
         }
     }
