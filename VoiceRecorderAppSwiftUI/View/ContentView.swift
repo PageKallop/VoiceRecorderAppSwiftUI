@@ -12,10 +12,11 @@ struct ContentView: View {
     @ObservedObject var audioRecorder: AudioRecorder
     
     var body: some View {
+        
         NavigationView{
         
         VStack {
-            
+           
             RecordingList(audioRecorder: audioRecorder)
             //creates start/stop recording button
             if audioRecorder.recording == false {
@@ -23,8 +24,10 @@ struct ContentView: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 100, height: 100)
-                        .clipped()
+                        .frame(width: 75, height: 75)
+                         .clipped()
+                        .overlay(
+                            Circle().stroke(Color.white, lineWidth: 4.0))
                         .foregroundColor(.red)
                         .padding(.bottom, 40)
                 }
@@ -40,6 +43,8 @@ struct ContentView: View {
                 }
                 }
             }.navigationTitle("Voice Record")
+        .background(Color.black)
+        .cornerRadius(20)
         }
     }
 }

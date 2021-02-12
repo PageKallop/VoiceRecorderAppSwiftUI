@@ -14,6 +14,7 @@ struct RecordingList: View {
     var body: some View {
        //creates recording list 
         List {
+           
             ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
                 RecordingRow(audioURL: recording.fileURL)
             }
@@ -25,11 +26,29 @@ struct RecordingRow: View {
     
     var audioURL: URL
     
+    @ObservedObject var audioPlayer = AudioPlayer()
+    
     var body: some View {
         
         HStack {
             Text("\(audioURL.lastPathComponent)")
             Spacer()
+            //creates start/stop button
+            if audioPlayer.isPlaying == false {
+                Button(action: {
+                    print("play")
+                }) {
+                    Image(systemName: "play.circle")
+                        .imageScale(.large)
+                }
+            } else {
+                Button(action: {
+                    print("Stop")
+                }) {
+                    Image(systemName: "stop.fill")
+                        .imageScale(.large)
+                }
+            }
         }
     }
 }

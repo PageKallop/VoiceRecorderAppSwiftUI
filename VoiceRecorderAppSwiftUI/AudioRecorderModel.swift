@@ -31,6 +31,8 @@ class AudioRecorder: NSObject, ObservableObject {
             objectWillChange.send(self)
         }
     }
+ 
+    
     //creates recording session
     func startRecording() {
         let recordingSession = AVAudioSession.sharedInstance()

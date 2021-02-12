@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0653B9225D6E57900425DDC /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0653B9125D6E57900425DDC /* AudioPlayer.swift */; };
 		C0A55B4825D46F7E0068DA24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55B4725D46F7E0068DA24 /* AppDelegate.swift */; };
 		C0A55B4A25D46F7E0068DA24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55B4925D46F7E0068DA24 /* SceneDelegate.swift */; };
 		C0A55B4C25D46F7E0068DA24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55B4B25D46F7E0068DA24 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0653B9125D6E57900425DDC /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		C0A55B4425D46F7E0068DA24 /* VoiceRecorderAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceRecorderAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A55B4725D46F7E0068DA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A55B4925D46F7E0068DA24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				C0A55B4725D46F7E0068DA24 /* AppDelegate.swift */,
 				C0A55B4925D46F7E0068DA24 /* SceneDelegate.swift */,
 				C0A55B5D25D470A80068DA24 /* AudioRecorderModel.swift */,
+				C0653B9125D6E57900425DDC /* AudioPlayer.swift */,
 				C0D7A9F325D59C860000983D /* RecordingDataModel.swift */,
 				C0A55B5C25D470850068DA24 /* View */,
 				C0A55B4D25D46F7F0068DA24 /* Assets.xcassets */,
@@ -168,6 +171,7 @@
 				C0D7A9F425D59C860000983D /* RecordingDataModel.swift in Sources */,
 				C0A55B4A25D46F7E0068DA24 /* SceneDelegate.swift in Sources */,
 				C0A55B4C25D46F7E0068DA24 /* ContentView.swift in Sources */,
+				C0653B9225D6E57900425DDC /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
